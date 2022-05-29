@@ -20,17 +20,16 @@ function calculaImc(){
  else if(imc >= 24.9 && imc < 34.9){
   setMessage('Você esta levemente acima do peso! Seu IMC:'+ imc.toFixed(2));
  }
-
+ 
  else if(imc < 34.9){
   setMessage('Cuidado obesidade! Seu IMC:'+ imc.toFixed(2));
  }
 }
 
 return(
-  <>
-  <div className="app">
-    <h1>Calculadora IMC</h1>
-    <span>Vamos calcular seu imc</span>
+  <><div className="app">
+    <h1>Calculadora de IMC</h1>
+    <span>Vamos calcular seu imc?</span>
 
     <div className="area-input">
       <input
@@ -50,9 +49,7 @@ return(
         Calcular
       </button>
     </div>
-  </div>
-  <h2>{message}</h2>
-  </>
+  </div><h2>{message}</h2></>
 )
 }
 
